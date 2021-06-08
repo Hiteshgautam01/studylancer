@@ -153,6 +153,125 @@
         .mt-20{
             margin-top: 20px;
         }
+
+        .timeline_area {
+    position: relative;
+    z-index: 1;
+}
+.single-timeline-area {
+    position: relative;
+    z-index: 1;
+    padding-left: 180px;
+}
+@media only screen and (max-width: 575px) {
+    .single-timeline-area {
+        padding-left: 100px;
+    }
+}
+.single-timeline-area .timeline-date {
+    position: absolute;
+    width: 180px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-right: 60px;
+}
+@media only screen and (max-width: 575px) {
+    .single-timeline-area .timeline-date {
+        width: 100px;
+    }
+}
+.single-timeline-area .timeline-date::after {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    content: "";
+    background-color: #ebebeb;
+    top: 0;
+    right: 30px;
+    z-index: 1;
+}
+.single-timeline-area .timeline-date::before {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #5856d6;
+    content: "";
+    top: 50%;
+    right: 26px;
+    z-index: 5;
+    margin-top: -5.5px;
+}
+.single-timeline-area .timeline-date p {
+    margin-bottom: 0;
+    color: #020710;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.single-timeline-area .single-timeline-content {
+    position: relative;
+    z-index: 1;
+    padding: 30px 30px 25px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+    box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+    border: 1px solid #ebebeb;
+}
+@media only screen and (max-width: 575px) {
+    .single-timeline-area .single-timeline-content {
+        padding: 20px;
+    }
+}
+.single-timeline-area .single-timeline-content .timeline-icon {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    width: 30px;
+    height: 30px;
+    background-color:#5856d6;;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30px;
+    flex: 0 0 30px;
+    text-align: center;
+    max-width: 30px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+
+}
+.single-timeline-area .single-timeline-content .timeline-icon i {
+    color: #ffffff;
+    line-height: 30px;
+}
+.single-timeline-area .single-timeline-content .timeline-text h6 {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+.single-timeline-area .single-timeline-content .timeline-text p {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.single-timeline-area .single-timeline-content:hover .timeline-icon,
+.single-timeline-area .single-timeline-content:focus .timeline-icon {
+    background-color: #020710;
+}
+.single-timeline-area .single-timeline-content:hover .timeline-text h6,
+.single-timeline-area .single-timeline-content:focus .timeline-text h6 {
+    color: #3f43fd;
+}
             </style>
 </head>
 
@@ -634,13 +753,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div
+                                        <!-- <div
                                             class="mgt-button-wrapper mgt-button-wrapper-align-left mgt-button-wrapper-display-newline mgt-button-top-margin-true mgt-button-right-margin-false mgt-button-round-edges-full wpb_animate_when_almost_visible wpb_fadeInLeft fadeInLeft">
                                             <a class="btn hvr-grow mgt-button-icon- mgt-button mgt-style-solid mgt-size-large mgt-align-left mgt-display-newline mgt-text-size-normal mgt-button-icon-separator- mgt-button-icon-position-left text-font-weight-default mgt-text-transform-none mgt-button-44028276"
                                                 href="about-classic.html">
                                                 More features
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -1440,6 +1559,107 @@
                         <div class="row-full-width clearfix"></div>
 
                         <div class="row-full-width clearfix"></div>
+                        <section class="timeline_area section_padding_130">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-sm-8 col-lg-6">
+                                        <!-- Section Heading-->
+                                        <div class="section_heading text-center">
+                                            <h6>HOW IT'S WORK</h6>
+                                            <h3>A brief journey</h3>
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <!-- Timeline Area-->
+                                        <div class="apland-timeline-area">
+                                            <!-- Single Timeline Content-->
+                                            <div class="single-timeline-area">
+                                                <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                                    <p>Start</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-lg-4">
+                                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                            <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                                                            <div class="timeline-text">
+                                                                <h6>STEP-1</h6>
+                                                                <h3>Check your eligibility
+                                                                </h3>
+                                                                <p> Upload your document in few easy clicks and get your eligibility check by certified agent
+                                                                </p>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-4">
+                                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                                            <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
+                                                            <div class="timeline-text">
+                                                                <h6>STEP-2</h6>
+                                                                <h3>Apply to Schools
+                                                                    </h3>
+                                                                <p> Select a school and program complete profile,  submit documents.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-4">
+                                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                                            <div class="timeline-icon"><i class="fa fa-address-book" aria-hidden="true"></i></div>
+                                                            <div class="timeline-text">
+                                                                <h6>STEP-3</h6>
+                                                                <h3> Get Accepted
+                                                                </h3>
+                                                                <p>The schools have you your application and an offer letter is issue
+                                                                </p>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Single Timeline Content-->
+                                            <div class="single-timeline-area">
+                                                <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                                    <p>Departure</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-lg-4">
+                                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                            <div class="timeline-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                                            <div class="timeline-text">
+                                                                <h6>Step-4</h6>
+                                                                <h3>  Apply for Visa
+                    
+                                                                </h3>
+                                                                <p> Student lenses study Lancer experts and certified agents guide you through the visa application  process
+                    
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-4">
+                                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                                            <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                                            <div class="timeline-text">
+                                                                <h6>Fixed bug</h6>
+                                                                <h3>  Start your Journey
+                                                                </h3>
+                                                                <p> Book your flight pack your bags and your adventure</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                         <section class="section services-section " id="services">
                             <div class="container">
                                 <div class="row">
@@ -1554,23 +1774,21 @@
                                         <div class="mgt-promo-block-container wpb_content_element">
                                             <div class="mgt-promo-block-wrapper">
                                                 <div data-vc-parallax="1.5"
-                                                    data-vc-parallax-image="upload/girl-sun-table.jpg"
+                                                    data-vc-parallax-image="img/banner2.jpg"
                                                     class="general parallax parallax-fixed js-parallax-o-fixed mgt-promo-block white-text cover-image darken mgt-promo-block-55043719"
                                                     data-style="background-color: #f5f5f5;height: 650px;">
                                                     <div class="mgt-promo-block-content va-middle">
                                                         <div class="mgt-promo-block-content-inside">
                                                             <h2 style="text-align: center;">Get our app today</h2>
                                                             <p style="text-align: center;">
-                                                                We provide independent advice based on established
-                                                                research methods,<br />
-                                                                and our experts have in-depth sector knowledge.
+                                                                
                                                             </p>
                                                             <div
                                                                 class="mgt-button-wrapper mgt-button-wrapper-align-center mgt-button-wrapper-display-newline mgt-button-top-margin-true mgt-button-right-margin-false mgt-button-round-edges-full">
                                                                 <a class="btn hvr-grow mgt-button-icon-true mgt-button mgt-style-solid mgt-size-large mgt-align-center mgt-display-newline mgt-text-size-normal mgt-button-icon-separator- mgt-button-icon-position-right text-font-weight-default mgt-text-transform-none mgt-button-61707295"
                                                                     rel="lightbox"
-                                                                    href="https://themeforest.net/user/max-themes/portfolio">
-                                                                    Download Now<i class="typcn typcn-vendor-apple"></i>
+                                                                    href="https://play.google.com/store/apps/details?id=com.elite_counsel&hl=en_US&gl=US">
+                                                                    Download Now
                                                                 </a>
                                                             </div>
                                                         </div>
